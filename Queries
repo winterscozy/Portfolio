@@ -13,5 +13,51 @@ FROM `sql-1-345800.space_mission.space_corrected`
 
 -- Even though this query is correct it returned every name each time it was mentioned so to solve this a DISTINCT was added and that returned our 56 companies 
 
--- 
+-- Next up I was curious about which company had the most trips since 1957 but since there was no real value on the amount trips taken so I was not able to create a query for this however I could also gather this information with a pivot table in excel
+
+--Looking at the data again I was curious about how many distinct locations the launches have taken place
+
+SELECT DISTINCT Location
+
+FROM `sql-1-345800.space_mission.space_corrected`
+
+-- Now knowing this info I wanted to answer my biggest question "how many trips were successful/failures/partial failures?
+
+SELECT  Status_Mission
+
+FROM `sql-1-345800.space_mission.space_corrected`
+
+WHERE Status_Mission = "Failure"
+
+and
+
+SELECT  Status_Mission
+
+FROM `sql-1-345800.space_mission.space_corrected`
+
+WHERE Status_Mission = "Partial Failure"
+
+and
+
+SELECT  Status_Mission
+
+FROM `sql-1-345800.space_mission.space_corrected`
+
+WHERE Status_Mission = "Success"
+
+-- And finally for this short analysis I wondered how many of these projects still ongoing vs retired
+
+SELECT  Status_Rocket
+
+FROM `sql-1-345800.space_mission.space_corrected`
+
+WHERE Status_Rocket = "StatusActive"
+
+SELECT  Status_Rocket
+
+FROM `sql-1-345800.space_mission.space_corrected`
+
+WHERE Status_Rocket = "StatusRetired"
+
+--That's the end of the queries that I've done for analysis. In the future I will add on to this with further questions to answer or a deep dive on some of the already existing information 
 
