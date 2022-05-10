@@ -1,1 +1,17 @@
 **I would like to note that I did do a bit of data cleaning to the original spreadsheet before transferring to BigQuery/ There were two columns one being untitled and the other being "unamed" and as they were not important to the analysis I removed them** 
+--Also note that this data only goees up to 2020 and no further--
+
+--So to start I wanted to preview the data with a query to make sure it all came through 
+SELECT *
+
+FROM `sql-1-345800.space_mission.space_corrected`
+
+-- Now that we can see that the preview show the correct info I first wanted to see who are the companies/ manufacturers involved
+SELECT Company_Name
+
+FROM `sql-1-345800.space_mission.space_corrected`
+
+-- Even though this query is correct it returned every name each time it was mentioned so to solve this a DISTINCT was added and that returned our 56 companies 
+
+-- 
+
