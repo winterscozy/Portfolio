@@ -1,0 +1,16 @@
+-- For each of these projects I wanted them to be something that personally interests me and as I am a very big fan of space I knew the moment I saw the ## Space Mission Analysis  [All Space Missions from 1957](https://www.kaggle.com/datasets/agirlcoding/all-space-missions-from-1957) that it would the perfect choice to do an analysis on
+-- However I did notice that there was a similar analysis done with this dataset that was posted publicly on 	[Medium](https://medium.com/) so did want to keep this analysis brief and simple so as not to make my work comparable to theirs
+
+-- When Looking at the spreadsheet for the space missions the main questions I wanted answered were 
+
+1. How many of these projects still ongoing vs retired?
+2. How many trips were successful/failures/partial failures?
+3. How many distinct locations the launches have taken place?
+4. Who are the companies/ manufacturers involved
+
+-- And using SQL I learned 
+
+1. There are only 739 Active and there are 3,534 Retired
+2. There were 339 Failures, 3,879 Successes and 102 Partial Failures
+3. The amount of launches that have taken place since 1957 have only occurred at 137 distinct locations this is interesting because there have been 4,317 trips/launches 
+4. There are only 56 companies that have contributed to the space missions
