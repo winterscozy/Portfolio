@@ -4,5 +4,4 @@
 
 Data comes from [All Space Missions from 1957](https://www.kaggle.com/datasets/agirlcoding/all-space-missions-from-1957)
 
-**The Second Project will be an analysis on my personal netflix data**
-Since this data is personalized you can actually perform on your own analysis with your data here [Netflix](https://help.netflix.com/en/node/101917)
+
