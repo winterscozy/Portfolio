@@ -4,4 +4,8 @@
 
 Data comes from [All Space Missions from 1957](https://www.kaggle.com/datasets/agirlcoding/all-space-missions-from-1957)
 
+**The second project will be using data analysis to get insights on hotel booking demands spanning from July 2015 to  and seeing if we can make future predictions for hotel bookings**
+
+Data comes from [Hotel Booking Demand](https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand)
+
 
