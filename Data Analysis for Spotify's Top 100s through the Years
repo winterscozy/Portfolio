@@ -1,0 +1,4 @@
+--Before I got into the analysis of the data I started by coming up with a list of questions that'll help me get insights on my data
+--Second I started by collecting my data about spotify's top songs through the yearss. This step was easy as I was able to find a pre made data set on 	[Kaggle](https://www.kaggle.com/datasets/paradisejoy/top-hits-spotify-from-20002019) 
+--Next I started cleaning the data to do this I dropped my dataset into Excel and got to work. Since this was a premade dataset I didn't want to change much but I did alter some of the columns formats to make them more understandable during the analysis such as changing the duration column which is measured in ms to seconds
+-- With all of that out of the way I now download the clean dataset and take into BigQuery to start analyzing wuth SQL
