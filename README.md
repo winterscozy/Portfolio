@@ -4,8 +4,8 @@
 
 Data comes from [All Space Missions from 1957](https://www.kaggle.com/datasets/agirlcoding/all-space-missions-from-1957)
 
-**The second project will be using data analysis to get insights on hotel booking demands spanning from July 2015 to  and seeing if we can make future predictions for hotel bookings**
+**The second project will be using data analysis to get insights on the top 100 spotify songs from 2010-2019 and seeing if we can make future predictions on what songs will end up in the list**
 
-Data comes from [Hotel Booking Demand](https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand)
+Data comes from [Spotify Top 100 Songs of 2010-2019](https://www.kaggle.com/datasets/muhmores/spotify-top-100-songs-of-20152019)
 
 
