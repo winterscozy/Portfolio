@@ -2,3 +2,37 @@
 --Second I started by collecting my data about spotify's top songs through the yearss. This step was easy as I was able to find a pre made data set on 	[Kaggle](https://www.kaggle.com/datasets/paradisejoy/top-hits-spotify-from-20002019) 
 --Next I started cleaning the data to do this I dropped my dataset into Excel and got to work. Since this was a premade dataset I didn't want to change much but I did alter some of the columns formats to make them more understandable during the analysis such as changing the duration column which is measured in ms to seconds
 -- With all of that out of the way I now download the clean dataset and take into BigQuery to start analyzing wuth SQL
+--To start I get a preview of the data to make sure it looks correct
+
+SELECT *
+ FROM `sql-1-345800.spotify.top_songs` 
+--
+
+SELECT DISTINCT  year, song, artist
+ FROM `sql-1-345800.spotify.top_songs`
+WHERE year = 2019
+
+--This is just a test query I ran aas I noticed there may not be the same amount of songs listed in each year. I actually ran this for all the years but since it was a test I'm leaving that query out
+
+--Next I started by looking for the most popular genre 
+
+SELECT genre
+ FROM `sql-1-345800.spotify.top_songs`
+GROUP BY genre
+ORDER BY COUNT(*) DESC
+
+--Then I wanted to see the difference between 2000 and 2019s top genre
+
+SELECT DISTINCT genre, year
+ FROM `sql-1-345800.spotify.top_songs`
+ WHERE year = 2000
+GROUP BY genre,year 
+
+SELECT DISTINCT genre, year
+ FROM `sql-1-345800.spotify.top_songs`
+ WHERE year = 2019 
+ GROUP BY genre,year 
+
+
+
+
