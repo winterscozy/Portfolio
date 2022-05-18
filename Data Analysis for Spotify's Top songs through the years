@@ -56,6 +56,22 @@ SELECT  artist, song, duration, year
  WHERE  year =2000
  ORDER BY duration DESC
  
+ SELECT  artist, song, duration, year 
+ FROM `sql-1-345800.spotify.top_songs`
+ WHERE  year =2019
+ ORDER BY duration DESC 
+ 
+ --
+ SELECT duration,
+        song,
+        artist,
+        year
+ FROM `sql-1-345800.spotify.top_songs`
+ ORDER BY duration DESC
+
+-- Now we;re going to look at the most popular songs from the years
+
+
  
  
  
