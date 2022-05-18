@@ -32,6 +32,28 @@ SELECT DISTINCT genre, year
  FROM `sql-1-345800.spotify.top_songs`
  WHERE year = 2019 
  GROUP BY genre,year 
+ 
+ -- Next we're looking for the songs with the highest danceability in 2000 and 2019
+ 
+ SELECT song, artist, danceability, year
+ FROM `sql-1-345800.spotify.top_songs`
+WHERE year = 2000 
+ORDER BY danceability DESC
+
+SELECT song, artist, danceability, year
+ FROM `sql-1-345800.spotify.top_songs`
+WHERE year = 2019
+ORDER BY danceability DESC
+
+SELECT song, artist, danceability, year
+ FROM `sql-1-345800.spotify.top_songs`
+ORDER BY danceability DESC
+
+-- 
+ 
+ 
+ 
+ 
 
 
 
