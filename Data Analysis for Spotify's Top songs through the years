@@ -49,7 +49,14 @@ SELECT song, artist, danceability, year
  FROM `sql-1-345800.spotify.top_songs`
 ORDER BY danceability DESC
 
--- 
+--Next we'll be looking at the duration of songs 
+
+SELECT  artist, song, duration, year 
+ FROM `sql-1-345800.spotify.top_songs`
+ WHERE  year =2000
+ ORDER BY duration DESC
+ 
+ 
  
  
  
