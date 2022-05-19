@@ -93,7 +93,25 @@ SELECT DISTINCT *
  ORDER BY popularity DESC
 
 
---
+--We're now going to look at energy and how it's changed over time
+
+SELECT *
+ FROM `sql-1-345800.spotify.top_songs`
+ WHERE year = 2000
+ ORDER BY energy ASC
+ 
+ SELECT *
+ FROM `sql-1-345800.spotify.top_songs`
+ WHERE year = 2019
+ ORDER BY energy ASC
+ 
+ SELECT *
+ FROM `sql-1-345800.spotify.top_songs`
+ ORDER BY energy ASC
+
+-- We'll now be looking at how songs with high and low loudness(db) is perceived in terms of popularity and also where they compare in genre
+
+
  
  
  
